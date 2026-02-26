@@ -39,7 +39,7 @@ function Hero() {
   return (
     <>
       <main className="  min-h-screen bg-black text-white">
-        <div className="header relative h-screen w-full bg-center bg-cover  bg-no-repeat  bg-cover bg-[url('./public/cloud.jpg')] opacity-[0.9]">
+        <div className="header relative h-screen w-full bg-center bg-cover  bg-no-repeat  bg-cover bg-[url('/cloud.jpg')] opacity-[0.9]">
           <main className="   mx-auto flex h-screen max-w-7xl flex-col items-center justify-center px-4 sm:px-6 md:mt-0 md:flex-row md:justify-between lg:px-[50px]">
             <div className="  sm:text-center lg:text-left ">
               <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
