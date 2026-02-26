@@ -85,7 +85,7 @@ function Projects() {
                   </span>
                 </div>
                 <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
-                  <a href=""></a> View Project
+                  <a href="https://calculator-eta-pearl.vercel.app/"></a> View Project
                 </button>
               </div>
             </div>
