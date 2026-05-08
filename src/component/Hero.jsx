@@ -1,14 +1,13 @@
-import React, { use } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 import Typed from "typed.js";
 import "./Hero.css";
-import { useEffect, useRef } from "react";
 import github from "./images/github.png";
 import linkedin from "./images/linkedin.png";
 import email from "./images/email.png";
 import main from "./images/main.svg";
 
-import "./Hero.css";
+
 function Hero() {
   const el = useRef(null);
 
@@ -19,10 +18,10 @@ function Hero() {
         "Back End Developer",
         "MERN Stack Developer",
       ],
-      startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 500,
+      startDelay: 500,
+      typeSpeed: 60,
+      backSpeed: 30,
+      backDelay: 2000,
       showCursor: false,
       smartBackspace: true,
       loop: true,
