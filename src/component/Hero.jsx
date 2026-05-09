@@ -25,13 +25,18 @@ function Hero() {
         "Back End Developer",
         "MERN Stack Developer",
       ],
-      startDelay: 500,
-      typeSpeed: 60,
-      backSpeed: 30,
-      backDelay: 2000,
+      startDelay: 300,
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1500,
       showCursor: false,
       smartBackspace: true,
       loop: true,
+      shuffle: false,
+      contentType: 'html',
+      fadeOut: false,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500,
     };
 
     const typed = new Typed(el.current, options);
@@ -82,16 +87,16 @@ function Hero() {
                     className="transition-all duration-300 hover:scale-125"
                   />
                 </a>
-                <a
-                  href="mailto:mirh7169@gmail.com"
-                  className=" mr-5 mt-8 cursor-pointer text-white transition-transform hover:scale-125 opacity-[0.9] transform-none"
+                <button
+                  onClick={scrollToContact}
+                  className=" mr-5 mt-8 cursor-pointer text-white transition-transform hover:scale-125 opacity-[0.9] transform-none bg-transparent border-none"
                 >
                   <img
                     src={email}
                     alt="email"
                     className="w-[60px]  transition-all duration-300 hover:scale-125"
                   />
-                </a>
+                </button>
               </div>
               <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
                 <button 
