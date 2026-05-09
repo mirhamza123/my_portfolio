@@ -11,6 +11,13 @@ import main from "./images/main.svg";
 function Hero() {
   const el = useRef(null);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   useEffect(() => {
     const options = {
       strings: [
@@ -87,11 +94,12 @@ function Hero() {
                 </a>
               </div>
               <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
-                <a href="">
-                  <button className="cursor-pointer  inline-flex  items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto">
-                    Get Started
-                  </button>
-                </a>
+                <button 
+                  onClick={scrollToContact}
+                  className="cursor-pointer  inline-flex  items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
+                >
+                  Get Started
+                </button>
                 <a href="">
                   <button className="cursor-pointer inline-flex  items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md border border-transparent bg-white px-5 py-3 text-base text-blue-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto">
                     Learn More

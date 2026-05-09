@@ -256,7 +256,7 @@ function Contact() {
 
   return (
     <>
-      <section className="py-20 bg-gray-900">
+      <section id="contact" className="py-20 bg-gray-900">
         <div className="mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="mb-2 text-white text-3xl font-bold md:text-4xl">Contact</h2>
