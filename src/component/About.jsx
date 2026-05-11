@@ -1,15 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import code from "./images/code.jpg"; // Ensure this image exists in your project
 // Adjust the path as necessary
 
 function About() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="bg-gray-900 py-20">
         <div className="mx-auto py-4">
           <div className=" mb-12 text-center opecity-1 transform-none ">
             <h2 className="mb-2 text-white text-3xl font-bold md:text-4xl">
-              About Me
+              {t('about.title')}
             </h2>
             <div className="h-1 w-20 mx-auto bg-blue-500"></div>
           </div>
@@ -29,40 +31,33 @@ function About() {
                 </div>
                 <div class="absolute bottom-0 w-full bg-black/30 p-4 text-center backdrop-blur-md">
                   <p class="text-lg font-semibold text-white">
-                    Years of Experience
+                    {t('about.experience')}
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-full md:w-1/2 text-white p-2">
               <h3 className="text-2xl font-bold  text-blue-400 mb-4 ">
-                A bit About Me
+                {t('about.subtitle')}
               </h3>
               <p className="mb-6  text-gray-300 text-lg leading-relaxed">
-                I am a passionate web developer with a love for creating dynamic
-                and responsive web applications. My journey in web development
-                has been fueled by a desire to build user-friendly interfaces
-                and efficient back-end systems.
+                {t('about.description1')}
               </p>
               <p className="mb-6  text-gray-300 text-lg leading-relaxed">
-                With expertise in React, Node.js, and various front-end
-                technologies, I strive to deliver high-quality code and
-                innovative solutions. I enjoy collaborating with teams to bring
-                ideas to life and continuously learn new skills in this
-                ever-evolving field.
+                {t('about.description2')}
               </p>
               <div class="mt-8 flex flex-wrap gap-3">
                 <span class="rounded-full bg-blue-500/10 px-4 py-2 font-medium text-blue-400">
-                  Problem Solver
+                  {t('about.skills.problemSolver')}
                 </span>
                 <span class="rounded-full bg-blue-500/10 px-4 py-2 font-medium text-blue-400">
-                  Creative Thinker
+                  {t('about.skills.creativeThinker')}
                 </span>
                 <span class="rounded-full bg-blue-500/10 px-4 py-2 font-medium text-blue-400">
-                  Team Player
+                  {t('about.skills.teamPlayer')}
                 </span>
                 <span class="rounded-full bg-blue-500/10 px-4 py-2 font-medium text-blue-400">
-                  Detail Oriented
+                  {t('about.skills.detailOriented')}
                 </span>
               </div>
             </div>

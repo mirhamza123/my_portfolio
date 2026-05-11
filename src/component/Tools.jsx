@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import html from "./images/html.svg";
 import css from "./images/css.svg";
 import bootstrap from "./images/boostrap.svg";
@@ -15,6 +16,7 @@ import nextjs from "./images/next.js.svg";
 import typescript from "./images/typescript.svg";
 
 function Tools() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="py-20 bg-black">
@@ -22,13 +24,11 @@ function Tools() {
           {/* tools title */}
           <div className="text-center mb-12 text-white transform-none">
             <h2 className="mb-2 text-3xl font-bold md:text-4xl ">
-              Technologies and Tools
+              {t('tools.title')}
             </h2>
             <div className=" m-auto h-1 w-20 bg-blue-500"></div>
             <p className=" mt-4 text-lg text-gray-300">
-              Using a combination of cutting-edge technologies and reliable
-              open-source software I build user-focused, performant websites for
-              smartphones, tablets, and desktops.
+              {t('tools.description')}
             </p>
           </div>
           {/* tools decrition */}

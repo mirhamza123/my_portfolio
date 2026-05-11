@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "greeting": "Hi, I am Hamza Mir",
+    "description": "I am Front End/ Back End/Development\nI am Currently working an a MERN Stack developer.",
+    "frontEnd": "Front End Developer",
+    "backEnd": "Back End Developer", 
+    "mernStack": "MERN Stack Developer",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Connect with me",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendButton": "Send Message",
+      "directEmail": "Send me Email directly at"
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "address": "Address",
+      "social": "Social"
+    }
+  },
+  "footer": {
+    "madeWith": "Made in 2025 with",
+    "by": "by Hamza mir"
+  },
+  "notifications": {
+    "messageSent": "Message sent successfully!",
+    "messageError": "Error: Message not sent."
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A bit About Me",
+    "experience": "Years of Experience",
+    "description1": "I am a passionate web developer with a love for creating dynamic and responsive web applications. My journey in web development has been fueled by a desire to build user-friendly interfaces and efficient back-end systems.",
+    "description2": "With expertise in React, Node.js, and various front-end technologies, I strive to deliver high-quality code and innovative solutions. I enjoy collaborating with teams to bring ideas to life and continuously learn new skills in this ever-evolving field.",
+    "skills": {
+      "problemSolver": "Problem Solver",
+      "creativeThinker": "Creative Thinker",
+      "teamPlayer": "Team Player",
+      "detailOriented": "Detail Oriented"
+    }
+  },
+  "tools": {
+    "title": "Technologies and Tools",
+    "description": "Using a combination of cutting-edge technologies and reliable open-source software I build user-focused, performant websites for smartphones, tablets, and desktops."
+  },
+  "services": {
+    "title": "Services",
+    "fullStack": {
+      "title": "Full Stack Web Development",
+      "description": "We offer comprehensive full-stack web development services, building robust and scalable web applications that meet your business needs."
+    },
+    "frontEnd": {
+      "title": "Front End Development",
+      "description": "Our front-end development services focus on creating visually appealing and user-friendly interfaces that enhance user experience and engagement."
+    },
+    "backEnd": {
+      "title": "Back END Development",
+      "description": "Our back-end development services ensure that your web applications are powered by robust and efficient server-side logic, databases, and APIs."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "easyBank": {
+      "title": "EasyBank",
+      "description": "A modern banking website with a sleek design and user-friendly interface. It features account management, transaction history, and secure login functionality.",
+      "viewProject": "view project"
+    },
+    "calculator": {
+      "title": "Calculator",
+      "description": "A responsive calculator application developed using React and Tailwind CSS. It performs basic arithmetic operations like addition, subtraction, multiplication, and division. The interface is clean, user-friendly, and optimized for both desktop and mobile devices."
+    },
+    "keyboard": {
+      "title": "Change Color background",
+      "description": "A responsive React application that changes background color based on user input. Users can type any valid CSS color name (like \"red\", \"blue\", \"skyblue\", etc.), and entire background updates instantly. It showcases real-time input handling, state updates with React hooks, and smooth visual transitions using Tailwind CSS.",
+      "viewProject": "View Project"
+    }
+  }
+}

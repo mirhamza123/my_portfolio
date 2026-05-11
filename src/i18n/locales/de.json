@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "greeting": "Hallo, ich bin Hamza Mir",
+    "description": "Ich bin Front End/ Back End/Entwicklung\nIch arbeite derzeit als MERN Stack Entwickler.",
+    "frontEnd": "Front End Entwickler",
+    "backEnd": "Back End Entwickler",
+    "mernStack": "MERN Stack Entwickler",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr erfahren"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Mit mir in Verbindung treten",
+    "description": "Ich bin immer offen für die Diskussion neuer Projekte, kreativer Ideen oder Möglichkeiten, Teil Ihrer Vision zu werden. Egal, ob Sie eine Frage haben, zusammenarbeiten möchten oder nur hallo sagen wollen, zögern Sie nicht, mich zu kontaktieren!",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "sendButton": "Nachricht senden",
+      "directEmail": "Senden Sie mir direkt eine E-Mail an"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "social": "Sozial"
+    }
+  },
+  "footer": {
+    "madeWith": "Gefertigt 2025 mit",
+    "by": "von Hamza mir"
+  },
+  "notifications": {
+    "messageSent": "Nachricht erfolgreich gesendet!",
+    "messageError": "Fehler: Nachricht nicht gesendet."
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Ein wenig über mich",
+    "experience": "Jahre der Erfahrung",
+    "description1": "Ich bin ein leidenschaftlicher Webentwickler mit einer Liebe für die Erstellung dynamischer und responsiver Webanwendungen. Meine Reise in der Webentwicklung wurde durch den Wunsch angetrieben, benutzerfreundliche Oberflächen und effiziente Back-End-Systeme zu bauen.",
+    "description2": "Mit Expertise in React, Node.js und verschiedenen Front-End-Technologien strebe ich danach, hochwertigen Code und innovative Lösungen zu liefern. Ich genieße es, mit Teams zusammenzuarbeiten, um Ideen zum Leben zu erwecken und kontinuierlich neue Fähigkeiten in diesem sich ständig weiterentwickelnden Bereich zu lernen.",
+    "skills": {
+      "problemSolver": "Problemlöser",
+      "creativeThinker": "Kreativer Denker",
+      "teamPlayer": "Teamspieler",
+      "detailOriented": "Detailorientiert"
+    }
+  },
+  "tools": {
+    "title": "Technologien und Werkzeuge",
+    "description": "Mit einer Kombination aus modernsten Technologien und zuverlässiger Open-Source-Software baue ich benutzerorientierte, performante Websites für Smartphones, Tablets und Desktops."
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "fullStack": {
+      "title": "Full-Stack-Webentwicklung",
+      "description": "Wir bieten umfassende Full-Stack-Webentwicklungsdienstleistungen an und bauen robuste und skalierbare Webanwendungen, die Ihren Geschäftsanforderungen entsprechen."
+    },
+    "frontEnd": {
+      "title": "Front-End-Entwicklung",
+      "description": "Unsere Front-End-Entwicklungsdienstleistungen konzentrieren sich auf die Erstellung visuell ansprechender und benutzerfreundlicher Oberflächen, die Benutzererfahrung und Engagement verbessern."
+    },
+    "backEnd": {
+      "title": "Back-End-Entwicklung",
+      "description": "Unsere Back-End-Entwicklungsdienstleistungen stellen sicher, dass Ihre Webanwendungen mit robusten und effizienten serverseitigen Logiken, Datenbanken und APIs betrieben werden."
+    }
+  },
+  "projects": {
+    "title": "Projekte",
+    "easyBank": {
+      "title": "EasyBank",
+      "description": "Eine moderne Banking-Website mit einem schlanken Design und benutzerfreundlicher Oberfläche. Sie bietet Kontoverwaltung, Transaktionshistorie und sichere Anmeldefunktion.",
+      "viewProject": "Projekt ansehen"
+    },
+    "calculator": {
+      "title": "Rechner",
+      "description": "Eine responsive Rechneranwendung, entwickelt mit React und Tailwind CSS. Sie führt grundlegende arithmetische Operationen wie Addition, Subtraktion, Multiplikation und Division durch. Die Oberfläche ist sauber, benutzerfreundlich und für Desktop- und mobile Geräte optimiert."
+    },
+    "keyboard": {
+      "title": "Hintergrundfarbe ändern",
+      "description": "Eine responsive React-Anwendung, die die Hintergrundfarbe basierend auf Benutzereingabe ändert. Benutzer können jeden gültigen CSS-Farbnamen (wie \"rot\", \"blau\", \"himmelblau\" usw.) eingeben, und der gesamte Hintergrund aktualisiert sich sofort. Sie zeigt Echtzeit-Eingabeverarbeitung, Zustandsaktualisierungen mit React Hooks und sanfte visuelle Übergänge mit Tailwind CSS.",
+      "viewProject": "Projekt ansehen"
+    }
+  }
+}

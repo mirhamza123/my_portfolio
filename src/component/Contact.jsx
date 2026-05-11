@@ -229,10 +229,12 @@
 // export default Contact;
 import React, { useRef } from "react"; // 1. useRef add kiya
 import emailjs from "@emailjs/browser"; // 2. EmailJS import kiya
+import { useTranslation } from "react-i18next";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+  const { t } = useTranslation();
   const form = useRef(); // 3. Form reference banaya
 
   function handle(evt) {
@@ -247,10 +249,10 @@ function Contact() {
       'nQlrqzj6OtsU1HUHB'
     )
     .then((result) => {
-        toast.success("Message sent successfully!");
+        toast.success(t('notifications.messageSent'));
         evt.target.reset(); 
     }, (error) => {
-        toast.error("Error: Message not sent.");
+        toast.error(t('notifications.messageError'));
     });
   }
 
@@ -259,11 +261,11 @@ function Contact() {
       <section id="contact" className="py-20 bg-gray-900">
         <div className="mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-2 text-white text-3xl font-bold md:text-4xl">Contact</h2>
+            <h2 className="mb-2 text-white text-3xl font-bold md:text-4xl">{t('contact.title')}</h2>
             <div className="h-1 w-20 mx-auto bg-blue-500"></div>
-            <p className=" mt-4 text-lg text-white">Connect with me</p>
+            <p className=" mt-4 text-lg text-white">{t('contact.subtitle')}</p>
             <p className="text-gray-400">
-              I'm always open to discussing new projects...
+              {t('contact.description')}
             </p>
           </div>
 
@@ -276,25 +278,25 @@ function Contact() {
                 onSubmit={handle}
               >
                 <div className="mb-4">
-                  <label htmlFor="name" className="block text-gray-300 font-medium text-sm mb-2">Name</label>
+                  <label htmlFor="name" className="block text-gray-300 font-medium text-sm mb-2">{t('contact.form.name')}</label>
                   <input
                     type="text"
                     id="name"
                     name="name"  // Template variable se match karega
                     className="w-full px-3 py-2 flex h-10 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Your Name"
+                    placeholder={t('contact.form.name')}
                     required
                   />
                 </div>
 
                 <div className="mb-4">
-                  <label htmlFor="email" className=" block text-gray-300 font-medium text-sm mb-2">Email</label>
+                  <label htmlFor="email" className=" block text-gray-300 font-medium text-sm mb-2">{t('contact.form.email')}</label>
                   <input
                     type="email"
                     id="email"
                     name="email" // Template variable se match karega
                     className="w-full px-3 py-2 flex h-10 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Your Email"
+                    placeholder={t('contact.form.email')}
                     required
                   />
                 </div>
@@ -303,13 +305,13 @@ function Contact() {
                 <input type="hidden" name="title" value="Portfolio Inquiry" />
 
                 <div className="mb-4">
-                  <label htmlFor="message" className="block text-gray-300 font-medium text-sm mb-2">Message</label>
+                  <label htmlFor="message" className="block text-gray-300 font-medium text-sm mb-2">{t('contact.form.message')}</label>
                   <textarea
                     id="message"
                     name="message" // Template variable se match karega
                     rows="4"
                     className="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Your Message"
+                    placeholder={t('contact.form.message')}
                     required
                   ></textarea>
                 </div>
@@ -318,7 +320,7 @@ function Contact() {
                   type="submit"
                   className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded transition duration-300 cursor-pointer"
                 >
-                  Send Message
+                  {t('contact.form.sendButton')}
                 </button>
               </form>
             </div>
@@ -327,7 +329,7 @@ function Contact() {
            <div className="w-full md:w-1/2">
               <div className="relative overflow-hidden bg-gray-800 rounded-xl p-8 shadow-xl">
                 <h3 className=" mb-4 text-white text-xl  font-bold">
-                  Contact information
+                  {t('contact.info.title')}
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
@@ -351,7 +353,7 @@ function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h4 class="text-sm font-medium text-gray-400">Email</h4>
+                      <h4 class="text-sm font-medium text-gray-400">{t('contact.info.email')}</h4>
                       <a
                         href="mailto:mirh7169@gmail.com"
                         class="text-blue-400 hover:text-blue-300"
@@ -379,7 +381,7 @@ function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h4 class="text-sm font-medium text-gray-400">Address</h4>
+                      <h4 class="text-sm font-medium text-gray-400">{t('contact.info.address')}</h4>
                       <p class="text-white">
                         hayatabad phase 4, Peshawar, Pakistan
                       </p>
@@ -387,7 +389,7 @@ function Contact() {
                   </div>
                   <div>
                     <h4 class="mb-3 text-sm font-medium text-gray-400">
-                      Social
+                      {t('contact.info.social')}
                     </h4>
                     <div class="flex space-x-4">
                       <a
@@ -445,12 +447,11 @@ function Contact() {
       <footer class="bg-black py-8">
          {/* Footer Content */}
           <div class="container mx-auto px-4 text-center">
-//           <p class="text-gray-400">
-//             Made in 2025 with{" "}
-//             <span class="inline-block animate-pulse text-red-500">❤️</span> by
-//             Hamza mir
-//           </p>
-//         </div>
+            <p class="text-gray-400">
+              {t('footer.madeWith')}{" "}
+              <span class="inline-block animate-pulse text-red-500">❤️</span> {t('footer.by')}
+            </p>
+          </div>
       </footer>
       <ToastContainer 
         position="top-right"

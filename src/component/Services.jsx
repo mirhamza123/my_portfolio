@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="">
@@ -8,7 +10,7 @@ function Services() {
           <div className="mx-auto px-4">
             <div className="mb-12 text-center  tansform-none">
               <h2 className="mb-2 text-3xl font-bold text-white md:text-4xl ">
-                Services
+                {t('services.title')}
               </h2>
               <div className="m-auto h-1 w-20 bg-blue-500"></div>
             </div>
@@ -31,12 +33,10 @@ function Services() {
                   </svg>
                 </div>
                 <h3 class="mb-4 text-xl font-bold text-white">
-                  Full Stack Web Development
+                  {t('services.fullStack.title')}
                 </h3>
                 <p className="text-gray-300">
-                  We offer comprehensive full-stack web development services,
-                  building robust and scalable web applications that meet your
-                  business needs.
+                  {t('services.fullStack.description')}
                 </p>
                 <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>
                 <div class="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>
@@ -60,12 +60,10 @@ function Services() {
                   </svg>
                 </div>
                 <h3 class="mb-4 text-xl font-bold text-white">
-                  Front End Development
+                  {t('services.frontEnd.title')}
                 </h3>
                 <p className="text-gray-300">
-                  Our front-end development services focus on creating visually
-                  appealing and user-friendly interfaces that enhance user
-                  experience and engagement.
+                  {t('services.frontEnd.description')}
                 </p>
                 <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>
                 <div class="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>
@@ -89,12 +87,10 @@ function Services() {
                   </svg>
                 </div>
                 <h3 class="mb-4 text-xl font-bold text-white">
-                  Back END Development
+                  {t('services.backEnd.title')}
                 </h3>
                 <p className="text-gray-300">
-                  Our back-end development services ensure that your web
-                  applications are powered by robust and efficient server-side
-                  logic, databases, and APIs.
+                  {t('services.backEnd.description')}
                 </p>
                 <div class="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>
                 <div class="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-blue-500/5 transition-all duration-500 group-hover:bg-blue-500/10"></div>

@@ -1,16 +1,18 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import project1 from "./images/project1.png";
 import calculator from "./images/calculator.png";
 import keyboard from "./images/keyboard.png"; // Ensure this image exists in your project
 
 function Projects() {
+  const { t } = useTranslation();
   return (
     <>
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2 md:text-4xl">
-              Projects
+              {t('projects.title')}
             </h2>
             <p className="h-1 mb-4 w-20 mx-auto bg-blue-500"></p>
           </div>
@@ -27,11 +29,9 @@ function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
               <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">EasyBank</h3>
+                <h3 className="text-white text-xl font-bold mb-2">{t('projects.easyBank.title')}</h3>
                 <p className="text-gray-300 mb-4">
-                  A modern banking website with a sleek design and user-friendly
-                  interface. It features account management, transaction
-                  history, and secure login functionality.
+                  {t('projects.easyBank.description')}
                 </p>
                 <div className="mb-4 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
@@ -46,7 +46,7 @@ function Projects() {
                 </div>
                 <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/EasyBank/">
-                    view project
+                    {t('projects.easyBank.viewProject')}
                   </a>
                 </button>
               </div>
@@ -64,14 +64,10 @@ function Projects() {
               </div>
               <div className="title  p-6">
                 <h3 className="text-white text-xl font-bold mb-2">
-                  Calculator
+                  {t('projects.calculator.title')}
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  A responsive calculator application developed using React and
-                  Tailwind CSS. It performs basic arithmetic operations like
-                  addition, subtraction, multiplication, and division. The
-                  interface is clean, user-friendly, and optimized for both
-                  desktop and mobile devices.
+                  {t('projects.calculator.description')}
                 </p>
                 <div className="mb-4 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
@@ -101,15 +97,10 @@ function Projects() {
               </div>
               <div className="title  p-6">
                 <h3 className="text-white text-xl font-bold mb-2">
-                  Change Color background
+                  {t('projects.keyboard.title')}
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  A responsive React application that changes the background
-                  color based on user input. Users can type any valid CSS color
-                  name (like "red", "blue", "skyblue", etc.), and the entire
-                  background updates instantly. It showcases real-time input
-                  handling, state updates with React hooks, and smooth visual
-                  transitions using Tailwind CSS. .
+                  {t('projects.keyboard.description')}
                 </p>
                 <div className="mb-4 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
@@ -124,8 +115,7 @@ function Projects() {
                 </div>
                 <button class="h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/keyboard-Events-project/">
-                    {" "}
-                    View Project
+                    {t('projects.keyboard.viewProject')}
                   </a>
                 </button>
               </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 import "./Hero.css";
 import github from "./images/github.png";
@@ -9,6 +10,7 @@ import main from "./images/main.svg";
 
 
 function Hero() {
+  const { t } = useTranslation();
   const el = useRef(null);
 
   const scrollToContact = () => {
@@ -21,9 +23,9 @@ function Hero() {
   useEffect(() => {
     const options = {
       strings: [
-        "Front End Developer",
-        "Back End Developer",
-        "MERN Stack Developer",
+        t('hero.frontEnd'),
+        t('hero.backEnd'),
+        t('hero.mernStack'),
       ],
       startDelay: 300,
       typeSpeed: 50,
@@ -55,7 +57,7 @@ function Hero() {
             <div className="  sm:text-center lg:text-left ">
               <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
                 <span className="block text-white opacity-[1] transform-none">
-                  Hi, I am Hamza Mir
+                  {t('hero.greeting')}
                 </span>
                 <span
                   ref={el}
@@ -63,8 +65,12 @@ function Hero() {
                 ></span>
               </h1>
               <p className="mt-3 text-base text-white sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                I am Front End/ Back End/Development <br />I am Currently
-                working an a MERN Stack developer.
+                {t('hero.description').split('\n').map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    {index < t('hero.description').split('\n').length - 1 && <br />}
+                  </span>
+                ))}
               </p>
               <div className="flex md:justify-start ">
                 <a
@@ -103,11 +109,11 @@ function Hero() {
                   onClick={scrollToContact}
                   className="cursor-pointer  inline-flex  items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
                 >
-                  Get Started
+                  {t('hero.getStarted')}
                 </button>
                 <a href="">
                   <button className="cursor-pointer inline-flex  items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md border border-transparent bg-white px-5 py-3 text-base text-blue-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto">
-                    Learn More
+                    {t('hero.learnMore')}
                   </button>
                 </a>
               </div>
