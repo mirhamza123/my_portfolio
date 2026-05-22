@@ -8,25 +8,20 @@ import linkedin from "./images/linkedin.png";
 import email from "./images/email.png";
 import main from "./images/main.svg";
 
-
 function Hero() {
   const { t } = useTranslation();
   const el = useRef(null);
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   useEffect(() => {
     const options = {
-      strings: [
-        t('hero.frontEnd'),
-        t('hero.backEnd'),
-        t('hero.mernStack'),
-      ],
+      strings: [t("hero.frontEnd"), t("hero.backEnd"), t("hero.mernStack")],
       startDelay: 300,
       typeSpeed: 50,
       backSpeed: 25,
@@ -35,9 +30,9 @@ function Hero() {
       smartBackspace: true,
       loop: true,
       shuffle: false,
-      contentType: 'html',
+      contentType: "html",
       fadeOut: false,
-      fadeOutClass: 'typed-fade-out',
+      fadeOutClass: "typed-fade-out",
       fadeOutDelay: 500,
     };
 
@@ -57,7 +52,7 @@ function Hero() {
             <div className="  sm:text-center lg:text-left ">
               <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
                 <span className="block text-white opacity-[1] transform-none">
-                  {t('hero.greeting')}
+                  {t("hero.greeting")}
                 </span>
                 <span
                   ref={el}
@@ -65,12 +60,16 @@ function Hero() {
                 ></span>
               </h1>
               <p className="mt-3 text-base text-white sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                {t('hero.description').split('\n').map((line, index) => (
-                  <span key={index}>
-                    {line}
-                    {index < t('hero.description').split('\n').length - 1 && <br />}
-                  </span>
-                ))}
+                {t("hero.description")
+                  .split("\n")
+                  .map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      {index < t("hero.description").split("\n").length - 1 && (
+                        <br />
+                      )}
+                    </span>
+                  ))}
               </p>
               <div className="flex md:justify-start ">
                 <a
@@ -105,23 +104,23 @@ function Hero() {
                 </button>
               </div>
               <div className="mt-8 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
-                <button 
+                <button
                   onClick={scrollToContact}
                   className="cursor-pointer  inline-flex  items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
                 >
-                  {t('hero.getStarted')}
+                  {t("hero.getStarted")}
                 </button>
                 <a href="">
                   <button className="cursor-pointer inline-flex  items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md border border-transparent bg-white px-5 py-3 text-base text-blue-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto">
-                    {t('hero.learnMore')}
+                    {t("hero.learnMore")}
                   </button>
                 </a>
-                <a 
-                  href="/assets/HamzaMirResume.pdf" 
+                <a
+                  href="/assets/HamzaMirResume.pdf"
                   download="Hamza_Mir_Resume.pdf"
                   className="cursor-pointer inline-flex  items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md border border-transparent bg-white px-5 py-3 text-base text-blue-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
                 >
-                  {t('hero.downloadCV')}
+                  {t("hero.downloadCV")}
                 </a>
               </div>
             </div>
