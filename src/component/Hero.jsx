@@ -116,6 +116,13 @@ function Hero() {
                     {t('hero.learnMore')}
                   </button>
                 </a>
+                <a 
+                  href="/assets/HamzaMirResume.pdf" 
+                  download="Hamza_Mir_Resume.pdf"
+                  className="cursor-pointer inline-flex  items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md border border-transparent bg-white px-5 py-3 text-base text-blue-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:w-auto"
+                >
+                  {t('hero.downloadCV')}
+                </a>
               </div>
             </div>
             <img
