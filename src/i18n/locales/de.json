@@ -82,6 +82,11 @@
       "title": "Hintergrundfarbe ändern",
       "description": "Eine responsive React-Anwendung, die die Hintergrundfarbe basierend auf Benutzereingabe ändert. Benutzer können jeden gültigen CSS-Farbnamen (wie \"rot\", \"blau\", \"himmelblau\" usw.) eingeben, und der gesamte Hintergrund aktualisiert sich sofort. Sie zeigt Echtzeit-Eingabeverarbeitung, Zustandsaktualisierungen mit React Hooks und sanfte visuelle Übergänge mit Tailwind CSS.",
       "viewProject": "Projekt ansehen"
+    },
+    "doctor": {
+      "title": "Arzttermin",
+      "description": "Eine Webanwendung zur Buchung und Verwaltung von Arztterminen. Sie ermöglicht es Patienten, verfügbare Zeitfenster einzusehen, Termine zu buchen und Bestätigungen zu erhalten.",
+      "viewProject": "Projekt ansehen"
     }
   }
 }

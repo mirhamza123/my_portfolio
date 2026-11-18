@@ -82,6 +82,12 @@
       "title": "Change Color background",
       "description": "A responsive React application that changes background color based on user input. Users can type any valid CSS color name (like \"red\", \"blue\", \"skyblue\", etc.), and entire background updates instantly. It showcases real-time input handling, state updates with React hooks, and smooth visual transitions using Tailwind CSS.",
       "viewProject": "View Project"
+    },
+    "doctor": {
+      "title": "Doctor Appointment",
+      "description": "A web application for booking and managing doctor appointments. It allows patients to view available time slots, book appointments, and receive confirmations.",
+      "viewProject": "View Project"
     }
+
   }
 }
