@@ -92,6 +92,11 @@
       "title": "Help Desk",
       "description": "Löst unorganisierten Kundensupport, indem unübersichtliche E-Mail-Threads durch ein zentrales, rollenbasiertes Ticketing-System ersetzt werden. Benutzer können Supportanfragen nach Priorität und Status erstellen und verfolgen, während Agenten und Administratoren Workflows effizient mit automatisierten E-Mail-Updates und Cloud-Dateianhängen verwalten.",
       "viewProject": "Projekt ansehen"
+    },
+    "inventory": {
+      "title": "Bestandsverwaltung",
+      "description": "Ein modernes Full-Stack-Bestandsverwaltungssystem mit Echtzeit-Lagerverfolgung, automatischer Rechnungsstellung und Gewinnanalyse. Es bietet Lieferantenverwaltung, Wareneingangs-/-ausgangsprotokolle und detaillierte Excel-Berichte.",
+      "viewProject": "Projekt ansehen"
     }
   }
 }

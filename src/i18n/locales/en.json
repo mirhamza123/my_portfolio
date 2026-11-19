@@ -92,7 +92,13 @@
       "title": "Help Desk",
       "description": "Solves disorganized customer support by replacing messy email threads with a centralized, role-based ticketing system. Users can raise and track support requests by priority and status, while agents and admins manage workflows efficiently with automated email updates and cloud file attachments",
       "viewProject": "View Project"
-    }   
+    },
+    "inventory": {
+      "title": "Inventory Management",
+      "description": "A full-stack inventory management system with real-time stock tracking, automated invoicing, and profit analytics. It features supplier management, stock in/out logs, and detailed Excel reporting.",
+      "viewProject": "View Project"
+    }
 
   }
+
 }
