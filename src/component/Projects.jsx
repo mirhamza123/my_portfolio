@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import project1 from "./images/project1.png";
 import calculator from "./images/calculator.png";
@@ -9,6 +9,8 @@ import inventory from "./images/inventory.png"; // Ensure this image exists in y
 
 function Projects() {
   const { t } = useTranslation();
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
   return (
     <>
       <section className="py-20 bg-black">
@@ -130,8 +132,9 @@ function Projects() {
               </div>
             </div>
             {/*  */}
+            {showAllProjects && <>
             {/*easyBank  */}
-            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+            <div className="project-card-reveal group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
               <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={project1}
@@ -167,7 +170,7 @@ function Projects() {
               </div>
             </div>
             {/* */}
-            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+            <div className="project-card-reveal group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
               <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={calculator}
@@ -203,7 +206,7 @@ function Projects() {
               </div>
             </div>
             {/*  */}
-            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+            <div className="project-card-reveal group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
               <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={keyboard}
@@ -237,8 +240,18 @@ function Projects() {
                 </button>
               </div>
             </div>
+            </>}
+            </div>
+            {!showAllProjects && (
+              <button
+                type="button"
+                onClick={() => setShowAllProjects(true)}
+                className="mx-auto mt-8 block h-10 rounded border border-blue-500 bg-black px-4 py-2 font-semibold text-blue-400 transition-colors hover:border-transparent hover:bg-blue-500/10 hover:text-blue-300"
+              >
+                {t("projects.seeMore")}
+              </button>
+            )}
           </div>
-        </div>
       </section>
     </>
   );

@@ -69,6 +69,7 @@
   },
   "projects": {
     "title": "Projekte",
+    "seeMore": "Mehr anzeigen",
     "easyBank": {
       "title": "EasyBank",
       "description": "Eine moderne Banking-Website mit einem schlanken Design und benutzerfreundlicher Oberfläche. Sie bietet Kontoverwaltung, Transaktionshistorie und sichere Anmeldefunktion.",

@@ -69,6 +69,7 @@
   },
   "projects": {
     "title": "Projects",
+    "seeMore": "See More",
     "easyBank": {
       "title": "EasyBank",
       "description": "A modern banking website with a sleek design and user-friendly interface. It features account management, transaction history, and secure login functionality.",
