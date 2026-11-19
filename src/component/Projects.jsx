@@ -48,7 +48,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://doctor-appointment-project-mu.vercel.app/">
                     {t("projects.doctor.viewProject")}
                   </a>
@@ -85,7 +85,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://helpdesk-ten-tau.vercel.app/login">
                     {t("projects.helpdesk.viewProject")}
                   </a>
@@ -122,7 +122,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://inventory-system-frontend-ivory.vercel.app/register">
                     {t("projects.inventory.viewProject")}
                   </a>
@@ -159,7 +159,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/EasyBank/">
                     {t("projects.easyBank.viewProject")}
                   </a>
@@ -195,7 +195,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://calculator-eta-pearl.vercel.app/">
                     View Project
                   </a>
@@ -230,7 +230,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="mt-auto h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button className="mt-auto h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/keyboard-Events-project/">
                     {t("projects.keyboard.viewProject")}
                   </a>
