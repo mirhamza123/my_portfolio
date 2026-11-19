@@ -90,7 +90,7 @@
     },
     "helpdesk": {
       "title": "Help Desk",
-      "description": "Ein Helpdesk-Ticketsystem, das es Benutzern ermöglicht, Support-Tickets einzureichen, deren Status zu verfolgen und mit Support-Mitarbeitern zu kommunizieren. Es verfügt über eine benutzerfreundliche Oberfläche und effizientes Ticketmanagement.",
+      "description": "Löst unorganisierten Kundensupport, indem unübersichtliche E-Mail-Threads durch ein zentrales, rollenbasiertes Ticketing-System ersetzt werden. Benutzer können Supportanfragen nach Priorität und Status erstellen und verfolgen, während Agenten und Administratoren Workflows effizient mit automatisierten E-Mail-Updates und Cloud-Dateianhängen verwalten.",
       "viewProject": "Projekt ansehen"
     }
   }

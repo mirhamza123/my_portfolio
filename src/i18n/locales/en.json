@@ -90,7 +90,7 @@
     },
     "helpdesk": {
       "title": "Help Desk",
-      "description": "A help desk ticketing system that allows users to submit support tickets, track their status, and communicate with support agents. It features a user-friendly interface and efficient ticket management.",
+      "description": "Solves disorganized customer support by replacing messy email threads with a centralized, role-based ticketing system. Users can raise and track support requests by priority and status, while agents and admins manage workflows efficiently with automated email updates and cloud file attachments",
       "viewProject": "View Project"
     }   
 
