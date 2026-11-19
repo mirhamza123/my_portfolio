@@ -22,22 +22,22 @@ function Projects() {
           {""}
           <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* doctor apppointment */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={doctor}
                   className="h-full w-full  transition-transform duration-500  object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.doctor.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.doctor.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     React
                   </span>
@@ -48,7 +48,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://doctor-appointment-project-mu.vercel.app/">
                     {t("projects.doctor.viewProject")}
                   </a>
@@ -57,8 +57,8 @@ function Projects() {
             </div>
             {/* */}
             {/* helpdesk */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={helpdesk}
                   alt=""
@@ -67,14 +67,14 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.helpdesk.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.helpdesk.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     NEXT JS
                   </span>
@@ -85,7 +85,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://helpdesk-ten-tau.vercel.app/login">
                     {t("projects.helpdesk.viewProject")}
                   </a>
@@ -94,8 +94,8 @@ function Projects() {
             </div>
             {/*  */}
             {/* inventory-system  */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={inventory}
                   alt=""
@@ -104,14 +104,14 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.inventory.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.inventory.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     React
                   </span>
@@ -122,7 +122,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://inventory-system-frontend-ivory.vercel.app/register">
                     {t("projects.inventory.viewProject")}
                   </a>
@@ -131,8 +131,8 @@ function Projects() {
             </div>
             {/*  */}
             {/*easyBank  */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={project1}
                   alt=""
@@ -141,14 +141,14 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.easyBank.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.easyBank.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     React
                   </span>
@@ -159,7 +159,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/EasyBank/">
                     {t("projects.easyBank.viewProject")}
                   </a>
@@ -167,8 +167,8 @@ function Projects() {
               </div>
             </div>
             {/* */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={calculator}
                   alt=""
@@ -177,14 +177,14 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.calculator.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.calculator.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     React
                   </span>
@@ -195,7 +195,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto  h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://calculator-eta-pearl.vercel.app/">
                     View Project
                   </a>
@@ -203,8 +203,8 @@ function Projects() {
               </div>
             </div>
             {/*  */}
-            <div className=" group relative overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
-              <div className="image relative h-48 overflow-hidden group-hover:scale-105">
+            <div className=" group relative flex h-full flex-col overflow-hidden rounded-xl bg-gray-800   transition-all duration-300 ">
+              <div className="image relative h-40 overflow-hidden group-hover:scale-105">
                 <img
                   src={keyboard}
                   alt=""
@@ -212,14 +212,14 @@ function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
               </div>
-              <div className="title  p-6">
-                <h3 className="text-white text-xl font-bold mb-2">
+              <div className="title flex flex-1 flex-col p-4">
+                <h3 className="text-white text-xl font-bold mb-1">
                   {t("projects.keyboard.title")}
                 </h3>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-3">
                   {t("projects.keyboard.description")}
                 </p>
-                <div className="mb-4 flex flex-wrap gap-2">
+                <div className="mb-3 flex flex-wrap gap-2">
                   <span className="rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-500">
                     React
                   </span>
@@ -230,7 +230,7 @@ function Projects() {
                     Node.js
                   </span>
                 </div>
-                <button class="h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
+                <button class="mt-auto h-10 bg-black hover:bg-blue-500/10 text-blue-400 font-semibold hover:text-blue-300 py-2 px-4 border border-blue-500 hover:border-transparent rounded cursor-pointer">
                   <a href="https://mirhamza123.github.io/keyboard-Events-project/">
                     {t("projects.keyboard.viewProject")}
                   </a>
