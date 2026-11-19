@@ -87,6 +87,11 @@
       "title": "Arzttermin",
       "description": "Eine Webanwendung zur Buchung und Verwaltung von Arztterminen. Sie ermöglicht es Patienten, verfügbare Zeitfenster einzusehen, Termine zu buchen und Bestätigungen zu erhalten.",
       "viewProject": "Projekt ansehen"
+    },
+    "helpdesk": {
+      "title": "Help Desk",
+      "description": "Ein Helpdesk-Ticketsystem, das es Benutzern ermöglicht, Support-Tickets einzureichen, deren Status zu verfolgen und mit Support-Mitarbeitern zu kommunizieren. Es verfügt über eine benutzerfreundliche Oberfläche und effizientes Ticketmanagement.",
+      "viewProject": "Projekt ansehen"
     }
   }
 }

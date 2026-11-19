@@ -87,7 +87,12 @@
       "title": "Doctor Appointment",
       "description": "A web application for booking and managing doctor appointments. It allows patients to view available time slots, book appointments, and receive confirmations.",
       "viewProject": "View Project"
-    }
+    },
+    "helpdesk": {
+      "title": "Help Desk",
+      "description": "A help desk ticketing system that allows users to submit support tickets, track their status, and communicate with support agents. It features a user-friendly interface and efficient ticket management.",
+      "viewProject": "View Project"
+    }   
 
   }
 }
